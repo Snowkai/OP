@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OP.Settings"
+             Title="Settings">
+    <VerticalStackLayout
+        Padding="15"
+        VerticalOptions="Start"
+        >
+        <Label 
+            Text="Gurskogo:"           
+            HorizontalOptions="Start"
+            FontSize="28"
+            />
+        <Entry
+            FontSize="30"
+            Placeholder="+375XXXXXXXXX"
+            Keyboard="Telephone"
+            Completed="gursk_Completed"
+            MaxLength="13"
+            />
+        <Label 
+            Text="Chapaeva:"           
+            HorizontalOptions="Start"
+            FontSize="28"
+            />
+        <Entry
+            FontSize="30"
+            Placeholder="+375XXXXXXXXX"
+            Keyboard="Telephone"
+            Completed="chap_Completed"
+            MaxLength="13"
+            />
+        <Button
+            x:Name="btn_back"
+            Text="Back"
+            FontSize="36"
+            Clicked="btn_back_Clicked" Margin="0,50,0,0"
+            VerticalOptions="End"
+            />
+
+    </VerticalStackLayout>
+</ContentPage>
