@@ -15,4 +15,8 @@
         Title="Settings"
         ContentTemplate="{DataTemplate local:Settings}"
         Route="Settings" />
+    <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:About}"
+        Route="About" />
 </Shell>

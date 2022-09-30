@@ -42,6 +42,7 @@
                 Margin="5"
                 HeightRequest="100"
                 HorizontalOptions="Fill"
+                Clicked="btn_about_Clicked"
                 />
 
         </VerticalStackLayout>

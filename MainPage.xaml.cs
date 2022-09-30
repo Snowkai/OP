@@ -38,14 +38,21 @@ public partial class MainPage : ContentPage
 				num = Data.chapaeva;
 			}            
         }
-		if(num != "")
+		if(num == "")
 		{
+			num = "000000";
 			Data.InvokeDialer(num);
 		}
 		else
 		{
-			
-		}
+			num = "000000";
+            await DisplayAlert("Alert", "No enter phone number", "OK");
+        }
 	}
+
+	private async void btn_about_Clicked(object sender, EventArgs e)
+	{
+        await Shell.Current.GoToAsync("//About");
+    }
 }
 
