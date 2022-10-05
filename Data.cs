@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace OP
 {
@@ -13,7 +9,10 @@ namespace OP
         public static void InvokeDialer(string number)
         {
             if (PhoneDialer.Default.IsSupported)
-                PhoneDialer.Default.Open(number);
+               PhoneDialer.Default.Open(number);            
+            //var phoneDialer = CrossMessaging.Current.PhoneDialer;            
+            //if (phoneDialer.CanMakePhoneCall)
+            //    phoneDialer.MakePhoneCall(number);
         }
     }
 }

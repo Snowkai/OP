@@ -38,14 +38,12 @@ public partial class MainPage : ContentPage
 				num = Data.chapaeva;
 			}            
         }
-		if(num == "")
-		{
-			num = "000000";
+		if(num != "")
+		{			
 			Data.InvokeDialer(num);
 		}
 		else
-		{
-			num = "000000";
+		{			
             await DisplayAlert("Alert", "No enter phone number", "OK");
         }
 	}
